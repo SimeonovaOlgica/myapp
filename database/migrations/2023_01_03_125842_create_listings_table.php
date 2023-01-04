@@ -13,6 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
+        //Creating the Listing table with the column/fields and types
+        //after you need to run migrate command
+
         Schema::create('listings', function (Blueprint $table) {
             $table->id();
             $table->string('title');

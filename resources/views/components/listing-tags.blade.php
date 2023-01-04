@@ -1,3 +1,5 @@
+{{-- Tags component --}}
+
 @props(['tagsCsv'])
 
 @php

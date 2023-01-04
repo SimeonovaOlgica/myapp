@@ -1,3 +1,5 @@
+{{-- The User Input Form --}}
+
 <x-layout>
     <x-card class="p-10 rounded max-w-lg mx-auto mt-24">
     <header class="text-center">
@@ -21,6 +23,8 @@
                                 name="company"
                                 value="{{old('company')}}"
                                 />
+                            {{-- Error directive will help with generating an error 
+                                message after the data valudation of input fields, done in the Lisitng controller store function --}}
                             @error('company')
                                 <p class="text-red-500 text-xs mt-1">{{$message}}</p>                                
                             @enderror

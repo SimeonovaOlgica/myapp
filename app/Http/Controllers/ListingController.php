@@ -8,6 +8,10 @@ use Illuminate\Validation\Rule;
 
 class ListingController extends Controller
 {
+    /* These funcitons are passed to the routes/ web.php file as arguments, 
+     such that controllers enable us organize the code and requests-flow easier 
+     and interact with the views created respecitevlly */
+
     //Show all listings
     public function index(){
         //dd();

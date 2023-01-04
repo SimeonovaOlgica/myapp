@@ -1,3 +1,5 @@
+{{-- The app layout component// included in every page --}}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -66,5 +68,4 @@ class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg
 </footer>
 <x-flash-message/>
 </body>
-</html>
 </html>

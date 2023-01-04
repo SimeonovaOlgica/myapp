@@ -1,3 +1,5 @@
+{{-- Alpine.js styling of the success message, after posting a job! --}}
+
 @if (session()->has('message'))
     <div x-data="{show: true}" 
         x-init="setTimeout(()=>show = false, 3000)"
