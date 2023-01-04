@@ -13,7 +13,8 @@
 @endforeach
 
 @else
-    <p>No listings found</p>
+    <p class="text-red-500 text-center font-bold">Sorry! No such jobs found!</p>
+    <i class="fa-solid fa-face-worried"></i>
 @endunless
 
 </x-layout>

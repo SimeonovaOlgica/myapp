@@ -2,6 +2,10 @@
 
 @php
     $tags=explode(',',$tagsCsv);
+    $end=end($tags);
+    if(strlen($end)<1){
+        array_pop($tags);
+    }
 @endphp
 
 <ul class="flex">

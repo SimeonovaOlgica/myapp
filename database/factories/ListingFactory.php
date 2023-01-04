@@ -16,6 +16,9 @@ class ListingFactory extends Factory
      */
     public function definition()
     {
+        //With Factory we can predefine dummy, random generated entries for the table with faker property, 
+        //and then run seed comand to populate the database
+
         return [
             'title'=>$this->faker->sentence(),
             'tags'=>'laravel, api, backend',

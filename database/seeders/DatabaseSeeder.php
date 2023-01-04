@@ -16,10 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-          \App\Models\User::factory(10)->create();
-
+          // Creating 6 random generated entries/jobs in Listing table
           Listing::factory(6)->create();
 
+          //Creating Manually Customised entries/jobs in Listing table 
           Listing:: create([
             'title' => 'Laravel Senior Developer',
             'tags' => 'laravel, javascript',
@@ -39,6 +39,8 @@ class DatabaseSeeder extends Seeder
             'website'=> 'https://www.acme.com',
             'description'=> 'Some text part 2'
           ]);
+
+        // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

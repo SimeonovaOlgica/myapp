@@ -20,7 +20,7 @@
                 theme: {
                     extend: {
                         colors: {
-                            laravel: "#ff7849",
+                            laravel: "#6ba3f0",
                         },
                     },
                 },
@@ -60,7 +60,7 @@ class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg
 
 <a
     href="/listings/create"
-    class="absolute top-1/3 right-10 bg-black text-white py-2 px-5"
+    class="absolute top-1/3 right-10 text-white py-2 px-5 bg-black hover:bg-yellow-400"
     >Post a job</a
 >
 </footer>

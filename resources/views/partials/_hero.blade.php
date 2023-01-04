@@ -10,12 +10,12 @@
                 <h1 class="text-6xl font-bold uppercase text-white">
                     CODE<span class="text-black">WORLD</span>
                 </h1>
-                <p class="text-2xl text-gray-200 font-bold my-4">
+                <p class="text-2xl text-yellow-300 font-bold my-4">
                     Find or post Coding jobs & projects
                 </p>
                 <div>
                     <a
-                        href="register.html"
+                        href="/"
                         class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black"
                         >Sign Up to post and offer a job</a
                     >

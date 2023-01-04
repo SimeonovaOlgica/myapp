@@ -10,8 +10,10 @@ class ListingController extends Controller
 {
     //Show all listings
     public function index(){
+        //dd();
         return view('listings.index', [
-            'listings'=> Listing::all()
+            'listings'=> Listing::latest()->filter
+            (request(['search']))->get()
         ]);
     }
     //Show single listing
@@ -28,15 +30,20 @@ class ListingController extends Controller
 
     //Store the POST data
     public function store(Request $request){
+       // dd($request->file('logo')->store());
         $formFields = $request->validate([
             'title'=>'required',
-            'company'=>['required',Rule::unique('listings','company')],
+            'company'=>'required',
             'location'=>'required',
-            'website'=>'required',
+            'website'=>['required',Rule::unique('listings','company')],
             'email'=>['required','email'],
             'tags'=>'required',
-            'description'=>'required'
+            'description'=>['required', 'max:255']
         ]);
+
+        if($request->hasFile('logo')){
+            $formFields['logo'] = $request->file('logo')->store('logos','public');
+        }
 
         Listing::create($formFields); //passing the form data into the database
 
